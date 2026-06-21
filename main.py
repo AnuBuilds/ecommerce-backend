@@ -13,7 +13,8 @@ app = FastAPI(title="E-Commerce API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:4200"],
+    allow_origins=["http://localhost:4200",
+                  "https://ecommerce-frontend-pi-green.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
